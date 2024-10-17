@@ -162,7 +162,7 @@ To install a plugin (requires Q2A 1.3 or later), place its directory in Q2A's `q
 - [Newsletter-favtags](https://github.com/ProThoughts/q2apro-newsletter-favtags) by [q2apro.com](https://github.com/q2apro).Users can subscribe to their favorite tags and the plugin emails them daily if there are new questions.
 - [Newsletter Plugin](https://github.com/NoahY/q2a-newsletter) by [NoahY](http://www.question2answer.org/qa/user/NoahY). Allows users to receive an HTML newsletter of the latest top questions, answers and comments.
 - [Tag and Category Notification](https://github.com/amiyasahu/q2a-email-notification) by [Amiya Sahu](http://amiyasahu.com/). When a question is asked with a tag/category, emails users who favorited that tag/category.
-- [Votes-manager](https://github.com/ProThoughts/q2apro-votes-manager) by [q2apro.com](https://github.com/q2apro).Lists all votes made in your forum.](https://github.com/q2apro).Sends emails to users about activities on questions they have favorited.
+- [Votes-manager](https://github.com/ProThoughts/q2apro-votes-manager) by [q2apro.com](https://github.com/q2apro). Lists all votes made in your forum. Sends emails to users about activities on questions they have favorited.
 
 ## Anti-spam tools
 
