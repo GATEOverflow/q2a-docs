@@ -1,7 +1,7 @@
 # Site settings
 title: Question2Answer documentation
 url: https://gateoverflow.github.io/q2a-docs
-baseurl: /
+baseurl: /q2a-docs/
 permalink: pretty
 exclude: [vendor]
 
