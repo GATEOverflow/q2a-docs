@@ -1,7 +1,7 @@
 <footer class="footer">
 	<nav class="footer-nav">
 		{% for navpage in site.nav.footer %}
-			<a class="footer-nav-link" href="{% if navpage.url startswith '/' %}{{ site.baseurl }}{% endif %}">{{ navpage.name }}</a>
+			<a class="footer-nav-link" href="{% if navpage.url | slice: 0, 1 == '/' %}{{ site.baseurl }}{% endif %}">{{ navpage.name }}</a>
 		{% endfor %}
 	</nav>
 	<div class="credit">
