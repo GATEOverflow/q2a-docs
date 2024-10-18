@@ -46,7 +46,7 @@ In this first step we will set up the directory for the plugin and create the cr
     }
     ```
 
-    See [here](/plugins/) for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the `qa-plugin.php` page directly (even though doing so would cause no actual harm).
+    See [here]({{ site.baseurl }}/plugins/) for a detailed description of the metadata fields. The code below the metadata ensures that visitors to your Q2A site cannot request the `qa-plugin.php` page directly (even though doing so would cause no actual harm).
 
 - Reopen the 'Plugins' page of your Q2A site admin panel and check that the listing has been updated. We're on our way!
 
@@ -70,7 +70,7 @@ In this step we will create the initial version of the widget module which displ
     }
     ```
 
-    This is the beginning of the PHP class that will define the widget's functionality. The `allow_template()` function is one of three class functions required in a widget module ([more here](/plugins/modules-widget/)). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns `true` if the `$template` parameter is `'tag'`.
+    This is the beginning of the PHP class that will define the widget's functionality. The `allow_template()` function is one of three class functions required in a widget module ([more here]({{ site.baseurl }}/plugins/modules-widget/)). It is called by Q2A to determine which types of pages the widget can be displayed on. In this case, the widget can only be displayed on pages listing recent questions for a tag, so the function only returns `true` if the `$template` parameter is `'tag'`.
 
 - Add the following two additional functions **inside** the `class` definition in `qa-tag-desc-widget.php`:
 
@@ -132,7 +132,7 @@ In this step we will create the page module that allows tag descriptions to be e
     }
     ```
 
-    The `match_request()` function let a page module decide if it will process a particular web page request. The `$request` parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - [more here](/plugins/modules-page/). We have decided that the URLs for our tag description editor will take the form `tag-edit/*` where `*` is the tag to be edited. For now, the `process_request()` function in the page module generates an empty page for these requests.
+    The `match_request()` function let a page module decide if it will process a particular web page request. The `$request` parameter is always slash-separated, independent of the URL structure used by a particular Q2A site - [more here]({{ site.baseurl }}/plugins/modules-page/). We have decided that the URLs for our tag description editor will take the form `tag-edit/*` where `*` is the tag to be edited. For now, the `process_request()` function in the page module generates an empty page for these requests.
 
 - Activate the page model within the plugin by pasting the following code at the end of your `qa-plugin.php` file:
 
@@ -684,7 +684,7 @@ In this final step we will make your plugin ready for localization into differen
     );
     ```
 
-    This sets up localization for your plugin. The `*` in the file name passed to `qa_register_plugin_phrases()` will be substituted for language codes such as `fr` or `ru`, or `default` to load the default phrases. The second parameter `'plugin_tag_desc'` sets the prefix for retrieving your language strings using Q2A's `qa_lang()` or `qa_lang_html()` functions - [more here](/plugins/).
+    This sets up localization for your plugin. The `*` in the file name passed to `qa_register_plugin_phrases()` will be substituted for language codes such as `fr` or `ru`, or `default` to load the default phrases. The second parameter `'plugin_tag_desc'` sets the prefix for retrieving your language strings using Q2A's `qa_lang()` or `qa_lang_html()` functions - [more here]({{ site.baseurl }}/plugins/).
 
 - Find the line in `qa-tag-desc-widget.php` containing the phrase `Create tag description` and replace it with:
 

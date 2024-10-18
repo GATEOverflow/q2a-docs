@@ -6,7 +6,7 @@ title: "Question2Answer - Developers - Plugin Modules"
 
 # Implementing plugin modules
 
-Plugin modules enable Question2Answer to be extended in specific ways. Each module is implemented as a PHP `class` with specific member functions. Some functions are relevant for all module types, as described below. Other functions are specific to a certain type of module, e.g. [page modules](/plugins/modules-page/) implement the functions `match_request()` and `process_request()`. If you wish to use non English characters in the PHP code for a module, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
+Plugin modules enable Question2Answer to be extended in specific ways. Each module is implemented as a PHP `class` with specific member functions. Some functions are relevant for all module types, as described below. Other functions are specific to a certain type of module, e.g. [page modules]({{ site.baseurl }}/plugins/modules-page/) implement the functions `match_request()` and `process_request()`. If you wish to use non English characters in the PHP code for a module, ensure your text editor is using UTF-8 encoding without a BOM (byte order mark).
 
 ## Types of Module
 
